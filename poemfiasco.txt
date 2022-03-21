@@ -1,0 +1,26 @@
+$ git branch
+* master
+$ git checkout master
+M       oven-bird.txt
+M       road-not-taken.txt
+Already on 'master'
+$ git checkout HEAD
+M       oven-bird.txt
+M       road-not-taken.txt
+$ git checkout oven-bird.txt
+$ git add .
+$ git reset HEAD fire-and-ice.txt
+$ git commit -m "a commit"
+[master e3acc63] a commit
+ 2 files changed, 40 insertions(+), 39 deletions(-)
+ rewrite oven-bird.txt (99%)
+ rewrite road-not-taken.txt (99%)
+$ git add .
+$ git commit -m "try"
+[master d1ae3c6] try
+ 3 files changed, 13 insertions(+), 2 deletions(-)
+ create mode 100644 fire-and-ice.txt
+$ git checkout HEAD road-not-taken.txt
+$ git checkout HEAD oven-bird.txt
+$ git checkout HEAD fire-and-ice.txt
+$ 
